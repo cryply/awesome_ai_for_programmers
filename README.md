@@ -17,7 +17,7 @@ Practical applications of ChatGPT and other LLMs for developers:
 7. **Code analysis** — finding style issues, async/multithreading bugs, inefficient queries
 8. **Code explanation** — explaining algorithms and complex code
 9. **Error debugging** — detailed error information and fixes
-10. **Diagrams** — creating diagrams with Mermaid, [quickchart.io](http://quickchart.io/), Graphviz
+10. **Diagrams** — creating diagrams with [Mermaid](https://mermaid.js.org/), [quickchart.io](http://quickchart.io/), [Graphviz](https://graphviz.org/)
 11. **Data generation** — generating test data arrays (e.g., medical terms)
 12. **Documentation** — adding docs to methods, generating markdown from code
 13. **Code conversion** — converting between programming languages
@@ -31,7 +31,7 @@ Practical applications of ChatGPT and other LLMs for developers:
 
 ## Best Practices
 
-- Use the strongest models: **GPT-5.2**, **Claude Opus 4.5**, **Gemini 3 Pro** for best quality
+- Use the strongest models: **[GPT-5.2](https://chat.openai.com/)**, **[Claude Opus 4.5](https://claude.ai/)**, **[Gemini 3 Pro](https://gemini.google.com/)** for best quality
 - Provide examples (*few-shot prompting*)
 - If the LLM is "lazy", use enhancer prompts or break down the task
 - If you get compilation/runtime errors, paste them back and ask for fixes
@@ -49,177 +49,191 @@ Practical applications of ChatGPT and other LLMs for developers:
 
 | Use Case | Recommended Tool |
 |----------|------------------|
-| Creative tasks | GPT-5.2 |
-| Long docs + precision | Claude Opus 4.5 |
-| Google multimodal | Gemini 3 Pro |
-| Live X data, unfiltered | Grok 4 |
-| Open-source (free) | DeepSeek V3.2 |
-| Chinese alternative | Qwen 3 |
+| Creative tasks | [GPT-5.2](https://chat.openai.com/) |
+| Long docs + precision | [Claude Opus 4.5](https://claude.ai/) |
+| Google multimodal | [Gemini 3 Pro](https://gemini.google.com/) |
+| Live X data, unfiltered | [Grok 4](https://grok.x.ai/) |
+| Open-source (free) | [DeepSeek V3.2](https://chat.deepseek.com/) |
+| Chinese alternative | [Qwen 3](https://chat.qwenlm.ai/) |
 
-**Chatbots:**
-- 🌟 **[ChatGPT](https://chat.openai.com/)** — chat, web search, image analysis, code execution, RAG. [Privacy settings](https://privacy.openai.com/policies?modal=take-control)
-- 🌟 **[Claude](https://claude.ai/)** — chat, web search, image analysis, RAG. Huge context window for entire books. Claude Opus 4.5 is GPT-4 level or higher
-- **[Gemini](https://gemini.google.com/)** — chat, web search, Google services integration
-- 🌟 **[HuggingFace Chat](https://huggingface.co/chat/)** — chat with best open models (Llama 3, Command R+)
-- **[Perplexity](https://www.perplexity.ai/)** — chat focused on web search with citations
-- **[Groq](https://groq.com/)** — ultra-fast inference
-- **[LMSys Chat](https://chat.lmsys.org/)** — compare models side-by-side
-- **[MistralAI Chat](https://chat.mistral.ai/)**
-- **[Cohere Coral](https://coral.cohere.com/)** — Command R/R+ with RAG via Grounding
-- **[DuckDuckGo Chat](https://duckduckgo.com/?q=DuckDuckGo&ia=chat)**
+**More Chatbots:**
+- 🌟 [HuggingFace Chat](https://huggingface.co/chat/) — chat with best open models (Llama 3, Command R+)
+- [Perplexity](https://www.perplexity.ai/) — chat focused on web search with citations
+- [Groq](https://groq.com/) — ultra-fast inference
+- [LMSys Chat](https://chat.lmsys.org/) — compare models side-by-side
+- [MistralAI Chat](https://chat.mistral.ai/)
+- [Cohere Coral](https://coral.cohere.com/) — Command R/R+ with RAG via Grounding
+- [DuckDuckGo Chat](https://duckduckgo.com/?q=DuckDuckGo&ia=chat)
 
 ### Code Editors / IDE
 
 | Use Case | Recommended Tool |
 |----------|------------------|
-| Terminal agent | Claude Code |
-| Full project context | Cursor |
-| Cloud sandbox | Codex |
-| Agentic IDE | Google Anti-Gravity |
+| Terminal agent | [Claude Code](https://www.anthropic.com/claude-code) |
+| Full project context | [Cursor](https://cursor.com/) |
+| Cloud sandbox | [Codex](https://openai.com/index/openai-codex/) |
+| Agentic IDE | [Google IDX](https://idx.dev/) |
 
-**AI-driven IDEs:**
-- 🌟 **[Cursor](https://cursor.sh/)** — VS Code fork with AI assistant, improved Copilot, context-aware chat. Supports custom OpenAI/Azure keys or local LLMs. New v2.2 with Debug Mode and Visual Editor
-- **[Aide](https://aide.dev/)** — AI-powered IDE with code generation
-- **[Zed](https://zed.dev/)** — lightweight, fast editor with built-in Copilot
+**More IDEs:**
+- [Aide](https://aide.dev/) — AI-powered IDE with code generation
+- [Zed](https://zed.dev/) — lightweight, fast editor with built-in Copilot
 
 **Autocomplete:**
-- **[GitHub Copilot](https://github.com/features/copilot)** / **[Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat)** — most popular plugin for JetBrains/VS Code
-- **[llama-coder](https://github.com/ex3ndr/llama-coder)** — open-source local Copilot for VS Code with Ollama
-- **[Continue](https://continue.dev/)** — VS Code and JetBrains, supports Ollama and LM Studio
-- **[Cody](https://sourcegraph.com/cody)** — VS Code autocomplete with [Ollama support](https://sourcegraph.com/blog/local-code-completion-with-ollama-and-cody)
-- **[supermaven](https://supermaven.com/)** — ultra-fast autocomplete with 300k context window
-- **[Tabby](https://tabby.tabbyml.com/)** — open-source autocomplete with local models
-
-**Terminal Agents:**
-- 🌟 **[Claude Code](https://www.anthropic.com/claude-code)** — Anthropic's agentic coding tool for terminal. Understands your codebase, executes routines, handles git workflows. Works in terminal, IDE extensions, or @claude on GitHub
+- [GitHub Copilot](https://github.com/features/copilot) / [Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat) — most popular plugin for JetBrains/VS Code
+- [llama-coder](https://github.com/ex3ndr/llama-coder) — open-source local Copilot for VS Code with Ollama
+- [Continue](https://continue.dev/) — VS Code and JetBrains, supports Ollama and LM Studio
+- [Cody](https://sourcegraph.com/cody) — VS Code autocomplete with [Ollama support](https://sourcegraph.com/blog/local-code-completion-with-ollama-and-cody)
+- [supermaven](https://supermaven.com/) — ultra-fast autocomplete with 300k context window
+- [Tabby](https://tabby.tabbyml.com/) — open-source autocomplete with local models
 
 ### Build / App Generators
 
 | Use Case | Recommended Tool |
 |----------|------------------|
-| UI components | v0 |
-| Full-stack apps | Bolt.new |
-| MVPs + backend | Lovable |
-| Instant deploy | Replit Agent |
+| UI components | [v0](https://v0.dev/) |
+| Full-stack apps | [Bolt.new](https://bolt.new/) |
+| MVPs + backend | [Lovable](https://lovable.dev/) |
+| Instant deploy | [Replit Agent](https://replit.com/) |
 
-**Generators:**
-- 🌟 **[v0](https://v0.dev/)** — Vercel's AI UI generator. Creates production-ready React components with Tailwind CSS
-- 🌟 **[Bolt.new](https://bolt.new/)** — AI-first browser IDE for full-stack apps. Zero setup, instant prototyping
-- 🌟 **[Lovable](https://lovable.dev/)** — formerly GPT Engineer. Full-stack from natural language, fastest MVPs ($20M ARR in 2 months)
-- **[Replit Agent](https://replit.com/)** — build full apps from descriptions with instant deploy
-- 🌟 **[aider](https://aider.chat)** — AI pair programmer in terminal. High SWE-bench scores
-- **[Devin](https://cognition.ai/)** — Cognition Labs' AI software engineer. Now used at Goldman Sachs, Santander. 67% PR merge rate, 10x faster migrations
-- **[OpenHands](https://github.com/All-Hands-AI/OpenHands)** — formerly OpenDevin, open-source alternative
-- **[SWE-agent](https://github.com/princeton-nlp/SWE-agent)**
-- **[Plandex](https://github.com/plandex-ai/plandex)** — terminal AI for large tasks
+**More Generators:**
+- 🌟 [aider](https://aider.chat) — AI pair programmer in terminal. High SWE-bench scores
+- [Devin](https://cognition.ai/) — Cognition Labs' AI software engineer. Now used at Goldman Sachs, Santander
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands) — formerly OpenDevin, open-source alternative
+- [SWE-agent](https://github.com/princeton-nlp/SWE-agent)
+- [Plandex](https://github.com/plandex-ai/plandex) — terminal AI for large tasks
 
 ### Media Generation
 
 | Use Case | Recommended Tool |
 |----------|------------------|
-| Artistic images | Midjourney v7 |
-| Open-source images | Flux |
-| Cinematic video | Sora 2 |
-| Google video | Veo 3 |
-| Fast video | Kling 2.6 |
-| Voice cloning | ElevenLabs |
-| Music generation | Suno v5 |
+| Artistic images | [Midjourney v7](https://www.midjourney.com/) |
+| Open-source images | [Flux](https://blackforestlabs.ai/) |
+| Cinematic video | [Sora 2](https://openai.com/sora/) |
+| Google video | [Veo 3](https://deepmind.google/technologies/veo/) |
+| Fast video | [Kling 2.6](https://klingai.com/) |
+| Voice cloning | [ElevenLabs](https://elevenlabs.io/) |
+| Music generation | [Suno v5](https://suno.com/) |
+
+**More Media Tools:**
+- [Runway Gen-4](https://runwayml.com/) — AI video with professional editing features
+- [Pika](https://pika.art/) — AI video generation
+- [Udio](https://www.udio.com/) — AI music generation
+- [Riffusion](https://www.riffusion.com/) — AI music, unlimited free generations
 
 ### Research
 
 | Use Case | Recommended Tool |
 |----------|------------------|
-| Web + citations | Perplexity Pro |
-| Your documents | Claude Opus 4.5 |
-| Audio briefings | NotebookLM |
-| Deep research | Gemini 3 Deep Research |
-| Live social trends | Grok 4 |
+| Web + citations | [Perplexity Pro](https://www.perplexity.ai/) |
+| Your documents | [Claude Opus 4.5](https://claude.ai/) |
+| Audio briefings | [NotebookLM](https://notebooklm.google.com/) |
+| Deep research | [Gemini Deep Research](https://gemini.google.com/) |
+| Live social trends | [Grok 4](https://grok.x.ai/) |
 
 ### Automation
 
 | Use Case | Recommended Tool |
 |----------|------------------|
-| AI-native workflows | n8n |
-| Visual complex flows | Make |
+| AI-native workflows | [n8n](https://n8n.io/) |
+| Visual complex flows | [Make](https://make.com/) |
 
-**Platforms:**
-- 🌟 **[n8n](https://n8n.io/)** — open-source workflow automation. Self-hostable, 400+ integrations, native AI/LangChain support, AI agents. Best for developers, per-execution pricing
+**Details:**
+- 🌟 **[n8n](https://n8n.io/)** — open-source workflow automation. Self-hostable, 400+ integrations, native AI/LangChain support, AI agents. Best for developers
 - **[Make](https://make.com/)** — formerly Integromat. Visual drag-and-drop, AI agents (April 2025), better for non-technical users
 
 ### Code Generation, Tests, Documentation & Code Review
 
-- **[JetBrains AI Assistant](https://www.jetbrains.com/help/idea/ai-assistant.html)** — code generation, test generation, commit summaries, code chat
-- **[Open Interpreter](https://openinterpreter.com/)** — Code Interpreter alternative with internet access, runs code locally
-- **[Codium](https://www.codium.ai/)** — test generation, code review, improvements
-- **[OpenCommit](https://github.com/di-sukharev/opencommit)** — generate commit messages from diffs
-- **[Machinet](https://www.machinet.net/)** — context-aware code generation, unit tests, code search
+| Tool | Features |
+|------|----------|
+| [JetBrains AI Assistant](https://www.jetbrains.com/ai/) | Code generation, test generation, commit summaries, code chat |
+| [Open Interpreter](https://openinterpreter.com/) | Code Interpreter alternative with internet access, runs code locally |
+| [Codium](https://www.codium.ai/) | Test generation, code review, improvements |
+| [OpenCommit](https://github.com/di-sukharev/opencommit) | Generate commit messages from diffs |
+| [Machinet](https://www.machinet.net/) | Context-aware code generation, unit tests, code search |
 
 ### Codebase Search
 
-- 🌟 **[greptile](https://app.greptile.com/)** — natural language code search (cloud)
-- **[Sourcegraph](https://sourcegraph.com/code-search)** — natural language code search
-- **[Phind for VS Code](https://marketplace.visualstudio.com/items?itemName=phind.phind)** — VS Code extension with code search
+| Tool | Features |
+|------|----------|
+| 🌟 [greptile](https://app.greptile.com/) | Natural language code search (cloud) |
+| [Sourcegraph](https://sourcegraph.com/code-search) | Natural language code search |
+| [Phind for VS Code](https://marketplace.visualstudio.com/items?itemName=phind.phind) | VS Code extension with code search |
 
 ### Tools for Deploying AI Models
 
-- 🌟 **[LM Studio](https://lmstudio.ai/)** — deploy LLMs locally (from HuggingFace in gguf), includes chat UI and embeddings support
-- 🌟 **[Ollama](https://ollama.com/)** — deploy LLMs locally in a few clicks. Use with [Open WebUI](https://github.com/open-webui/open-webui)
-- **[Llama file](https://github.com/Mozilla-Ocho/llamafile)** — deploy a model with API Gateway in one command
-- **[LocalAI](https://github.com/mudler/LocalAI)** — run open-source models
-- **[GPT4All](https://github.com/nomic-ai/gpt4all)**
+| Tool | Features |
+|------|----------|
+| 🌟 [LM Studio](https://lmstudio.ai/) | Deploy LLMs locally (HuggingFace gguf), chat UI, embeddings |
+| 🌟 [Ollama](https://ollama.com/) | Deploy LLMs locally in a few clicks. Use with [Open WebUI](https://github.com/open-webui/open-webui) |
+| [Llama file](https://github.com/Mozilla-Ocho/llamafile) | Deploy a model with API Gateway in one command |
+| [LocalAI](https://github.com/mudler/LocalAI) | Run open-source models |
+| [GPT4All](https://github.com/nomic-ai/gpt4all) | Local LLM deployment |
 
 ### Web & Desktop Clients for LLM Chat via API
 
-- 🌟 **[Chatbox](https://chatboxai.app/)** — Desktop, Android, iOS, Web for multiple LLMs (including Ollama)
-- **[Open WebUI](https://github.com/open-webui/open-webui)** — web UI for various LLMs, installs/removes Ollama models via UI
-- **[NextChat](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)** — popular web UI for multiple LLMs
-- 🌟 **[Jan](https://jan.ai/)** — chat and backend with built-in models, integrates with OpenAI, Azure, OpenRouter
+| Tool | Platforms |
+|------|-----------|
+| 🌟 [Chatbox](https://chatboxai.app/) | Desktop, Android, iOS, Web for multiple LLMs (including Ollama) |
+| [Open WebUI](https://github.com/open-webui/open-webui) | Web UI for various LLMs, manages Ollama models via UI |
+| [NextChat](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web) | Popular web UI for multiple LLMs |
+| 🌟 [Jan](https://jan.ai/) | Chat and backend with built-in models, integrates with OpenAI, Azure, OpenRouter |
 
 ### Specialized Tools
 
-- 🌟 **[Warp](https://www.warp.dev/)** — AI-driven terminal
+| Tool | Features |
+|------|----------|
+| 🌟 [Warp](https://www.warp.dev/) | AI-driven terminal |
 
 ### API & Proxies for AI Services
 
-- 🌟 **[OpenRouter](https://openrouter.ai/)** — proxy to many models including GPT-4, Claude, open LLMs
-- **Mistral API**
-- **Groq API**
-- **Claude API**
-- **Azure OpenAI API**
-- **Amazon Bedrock**
+| Service | Description |
+|---------|-------------|
+| 🌟 [OpenRouter](https://openrouter.ai/) | Proxy to many models including GPT-4, Claude, open LLMs |
+| [Mistral API](https://docs.mistral.ai/) | Mistral models API |
+| [Groq API](https://console.groq.com/) | Ultra-fast inference API |
+| [Claude API](https://www.anthropic.com/api) | Anthropic's Claude API |
+| [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service) | Microsoft's OpenAI service |
+| [Amazon Bedrock](https://aws.amazon.com/bedrock/) | AWS managed AI service |
 
 ### Cloud for LLM
 
-Cloud services for running and fine-tuning LLMs:
-
-- **[together.ai](https://www.together.ai/)** — many open-source models, custom deploys, fine-tuning
-- **[Fireworks](https://fireworks.ai/)** — open-source models + FireFunction, custom deploys
-- **[Amazon SageMaker](https://aws.amazon.com/sagemaker/)** — proprietary LLMs (Claude), embeddings (Cohere, Voyage)
-- **[deepinfra](https://deepinfra.com/)** — affordable open LLMs, GPU rental
-- **[Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/models/)** — small open models with playground and API
-- **[Perplexity API](https://docs.perplexity.ai/)** — Perplexity models + open models (Llama 3)
-- **[Replicate](https://replicate.com/)** — open models via API, custom model deployment
+| Service | Features |
+|---------|----------|
+| [together.ai](https://www.together.ai/) | Open-source models, custom deploys, fine-tuning |
+| [Fireworks](https://fireworks.ai/) | Open-source models + FireFunction, custom deploys |
+| [Amazon SageMaker](https://aws.amazon.com/sagemaker/) | Proprietary LLMs (Claude), embeddings (Cohere, Voyage) |
+| [deepinfra](https://deepinfra.com/) | Affordable open LLMs, GPU rental |
+| [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/models/) | Small open models with playground and API |
+| [Perplexity API](https://docs.perplexity.ai/) | Perplexity models + open models (Llama 3) |
+| [Replicate](https://replicate.com/) | Open models via API, custom model deployment |
 
 **GPU Rental:**
-- [Lambda](https://lambdalabs.com/)
-- [vast.ai](https://cloud.vast.ai/)
-- [nebius.ai](https://nebius.ai/)
-- [RunPod](https://www.runpod.io/)
+
+| Service | Link |
+|---------|------|
+| Lambda | [lambdalabs.com](https://lambdalabs.com/) |
+| vast.ai | [cloud.vast.ai](https://cloud.vast.ai/) |
+| nebius.ai | [nebius.ai](https://nebius.ai/) |
+| RunPod | [runpod.io](https://www.runpod.io/) |
 
 ### Leaderboards & Model Lists
 
-- **[LMArena](https://lmarena.ai/)** — compare 2 random models with user voting
-- **[Lmsys Arena](https://chat.lmsys.org/)** — LLM leaderboard based on user ratings (Coding category available)
-- **[LLM Explorer](https://llm.extractum.io/)** — LLM catalog by size (7B, 13B, 70B), VRAM requirements, coding scores
-- **[BigCode Leaderboard](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)** — coding models
-- **[Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)** — open LLMs
-- **[MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)** — embeddings models for RAG
+| Resource | Description |
+|----------|-------------|
+| [LMArena](https://lmarena.ai/) | Compare 2 random models with user voting |
+| [Lmsys Arena](https://chat.lmsys.org/) | LLM leaderboard based on user ratings (Coding category available) |
+| [LLM Explorer](https://llm.extractum.io/) | LLM catalog by size, VRAM requirements, coding scores |
+| [BigCode Leaderboard](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard) | Coding models |
+| [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) | Open LLMs |
+| [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) | Embeddings models for RAG |
 
 ### AI Service Lists
 
-- 🌟 **[AIA Podcast Catalog](https://awclub.github.io)** — AI services from [AIA Podcast](https://www.youtube.com/playlist?list=PLhf2AM9rZ9b8bFHSTh9jr2vlPd4Q0PJTZ)
-- **[TopAI.tools](https://topai.tools/)**
-- **[There's An AI for That](https://theresanaiforthat.com/ai/)** — AI services with natural language search
+| Resource | Description |
+|----------|-------------|
+| 🌟 [AIA Podcast Catalog](https://awclub.github.io) | AI services from [AIA Podcast](https://www.youtube.com/playlist?list=PLhf2AM9rZ9b8bFHSTh9jr2vlPd4Q0PJTZ) |
+| [TopAI.tools](https://topai.tools/) | AI tools directory |
+| [There's An AI for That](https://theresanaiforthat.com/ai/) | AI services with natural language search |
 
 ---
 
@@ -227,26 +241,34 @@ Cloud services for running and fine-tuning LLMs:
 
 ### Courses
 
-- 🌟 **[ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)** — DeepLearning + OpenAI
-- **[Prompting course with OpenAI](https://learnprompting.thinkific.com/courses/ChatGPT-for-Everyone)**
-- [OpenAI Cookbook resources](https://cookbook.openai.com/articles/related_resources#video-courses)
+| Course | Provider |
+|--------|----------|
+| 🌟 [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) | DeepLearning + OpenAI |
+| [Prompting course with OpenAI](https://learnprompting.thinkific.com/courses/ChatGPT-for-Everyone) | Learn Prompting |
+| [OpenAI Cookbook resources](https://cookbook.openai.com/articles/related_resources#video-courses) | OpenAI |
 
 ### Lectures
 
-- [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — Andrej Karpathy
-- [Let's build GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) — Andrej Karpathy
-- [Prompt Engineering Overview](https://youtu.be/dOxUroR57xs) — DAIR.AI
+| Lecture | Speaker |
+|---------|---------|
+| [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) | Andrej Karpathy |
+| [Let's build GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) | Andrej Karpathy |
+| [Prompt Engineering Overview](https://youtu.be/dOxUroR57xs) | DAIR.AI |
 
 ### Articles
 
-- [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
-- [OpenAI Best Practices](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
-- [Prompting Guide for Coding](https://www.promptingguide.ai/applications/coding)
-- [Anthropic Prompt Engineering](https://docs.anthropic.com/claude/docs/prompt-engineering)
+| Article | Source |
+|---------|--------|
+| [Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering) | OpenAI |
+| [Best Practices](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api) | OpenAI |
+| [Prompting for Coding](https://www.promptingguide.ai/applications/coding) | Prompting Guide |
+| [Prompt Engineering](https://docs.anthropic.com/claude/docs/prompt-engineering) | Anthropic |
 
 ### Communities
 
-- 🌟 **[AIA Podcast YouTube](https://www.youtube.com/playlist?list=PLhf2AM9rZ9b8bFHSTh9jr2vlPd4Q0PJTZ)**
+| Community | Link |
+|-----------|------|
+| 🌟 AIA Podcast | [YouTube](https://www.youtube.com/playlist?list=PLhf2AM9rZ9b8bFHSTh9jr2vlPd4Q0PJTZ) |
 
 ---
 
